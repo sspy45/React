@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+
+
+.widgets{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-family: "Comic Sans MS";
+}
+
+.widgets h1 {
+  color: white;
+}
+
+.listthing {
+list-style: none;
+color: white;
+font-size: 20px;
+border-color: gray;
+
+}
+
+.listwidget {
+  flex: 1;
+}
+
+.clockWidget {
+  flex: 1;
+  height: 50%;
+  text-align: center;
+  border: solid 20px red;
+  background-image: url('http://cdnph.upi.com/svc/sv/i/7031460659148/2016/1/14606602426605/Cannibal-alligators-feast-on-smaller-gators-at-Florida-reserve.jpg');
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.clockWidget:hover {
+  background-image: url('https://c1.staticflickr.com/4/3210/3022880185_0c9b6ef585_b.jpg');
+
+}
+
+.clock {
+  color: lightblue;
+}
+
+.weather-widget{
+  flex: 1;
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  border: solid 20px teal;
+
+  background-image: url('https://i.ytimg.com/vi/WCjNQqRdv7U/maxresdefault.jpg');
+  background-size: cover;
+  border-radius: 10px;
+
+}
+
+.weather-widget h2 {
+    color: limegreen;
+}
+
+.weather-widget:hover {
+  background-image: url('http://www.animalbabies.me/img/18000.o.jpg');
+}
+
+.vid {
+  height: 50%;
+  width:50%;
+}
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
